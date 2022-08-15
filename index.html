@@ -15,12 +15,12 @@
             );
         const Button = () => (<button style= {{backgroundColor: "tomato",}} onClick={() => console.log("I'm clicked")} >
             Click me</button>);
-        const Container = (
+        const Container = () => (
             <div>
                 <Title />
                 <Button />
             </div>
             );
-        ReactDOM.render(container, root);
+        ReactDOM.render(<Container />, root);
     </script>
 </html>
